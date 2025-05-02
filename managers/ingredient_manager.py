@@ -1,7 +1,8 @@
 import json
 from pathlib import Path
 from .base_manager import BaseManager
-
+from validations import *
+from user_input import *
 
 class IngredientManager(BaseManager):
     """Manages ingredient storage and calorie values."""
@@ -12,8 +13,8 @@ class IngredientManager(BaseManager):
         self.load()
 
     def add_item(self):
-        name = input("Ingredient name: ").lower()
-        calories = float(input("Calories per 100g: "))
+        name = get_input("Ingredient name: ", validate_non_empty_string, "Please enter valid ingredient.")
+        calories = float(get_input("Calories per 100g: ", validate_calories, "Please enter a valid number."))
         self._ingredients[name] = calories
         print(f"{name} added.\n")
         self.save()

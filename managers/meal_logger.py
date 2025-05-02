@@ -1,7 +1,8 @@
 import json
 import datetime
 from pathlib import Path
-
+from validations import *
+from user_input import *
 
 class MealLogger:
     """Logs meals consumed and calculates daily calorie intake."""
@@ -19,7 +20,7 @@ class MealLogger:
         if today not in self._log:
             self._log[today] = []
 
-        meal = input("Meal eaten: ").lower()
+        meal = get_input("Meal eaten: ", validate_non_empty_string, "Please enter a valid meal name.")
         if meal not in self._meals:
             print("Meal not found.")
             return

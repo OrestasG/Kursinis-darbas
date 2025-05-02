@@ -1,3 +1,6 @@
+from validations import *
+from user_input import *
+
 class MealSuggester:
     """Suggests meals based on available ingredients."""
 
@@ -5,9 +8,12 @@ class MealSuggester:
         self._meals = meal_manager.get_meals()
 
     def suggest(self):
-        available = input(
-            "Enter available ingredients (comma-separated): "
-        ).lower().split(",")
+        available = get_input(
+            "Enter available ingredients (comma-separated): ",
+            validate_non_empty_string,
+            "Please enter at least one ingredient."
+        )
+        available = available.split(",")
         available = [i.strip() for i in available]
 
         print("\nSuggested meals:")
@@ -16,5 +22,6 @@ class MealSuggester:
             if all(ing in available for ing, _ in ing_list):
                 print(f"- {meal}")
                 found = True
+        # If no meals match the available ingredients, inform the user.
         if not found:
             print("No matches found.\n")

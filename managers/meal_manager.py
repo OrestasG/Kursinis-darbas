@@ -1,7 +1,8 @@
 import json
 from pathlib import Path
 from .base_manager import BaseManager
-
+from validations import *
+from user_input import *
 
 class MealManager(BaseManager):
     """Manages meals composed of user-defined ingredients."""
@@ -13,18 +14,18 @@ class MealManager(BaseManager):
         self.load()
 
     def add_item(self):
-        name = input("Meal name: ").lower()
+        name = get_input("Meal name: ", validate_non_empty_string, "Enter a valid meal name.")
         ingredients = self._ingredient_manager.get_ingredients()
         meal_ingredients = []
 
         while True:
-            ing = input("Add ingredient (or 'done'): ").lower()
+            ing = get_input("Add ingredient (or 'done'): ", validate_non_empty_string, "Enter a valid ingredient name.")
             if ing == 'done':
                 break
             elif ing not in ingredients:
                 print("Ingredient not found.")
                 continue
-            amount = float(input("Amount in grams: "))
+            amount = float(get_input("Amount in grams: ", validate_positive_float, "Enter a valid amount in grams."))
             meal_ingredients.append((ing, amount))
 
         self._meals[name] = meal_ingredients
