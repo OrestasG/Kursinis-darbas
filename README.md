@@ -86,6 +86,19 @@ jei sunaikinsim MealManager, IngredientManager funkcija niekur nedings ir galima
 
 ### b. Apibendrinimas
 
+Kursinio darbo metu buvo sukurta programą, leidžiančią vartotojams valdyti savo mitybą pagal tikslus ir galimybes. Įgyvendinti visi funkcionalūs reikalavimai ir objektinio programavimo principai. Kodas aiškiai suskirstytas į atskirus failus pagal klases. 
+
+### c. Kaip galima būtų patobulinti programą?
+
+Ateityje galima būtų naudoti tikra duomenų bazė vietoj JSON failų. Pridėti papildomus mitybos aspektus – baltymus, riebalus, angliavandenius. Padaryti programą pasiekiama daugiau žmonių.
+Leisti pasirinkti vartotojui sporto lygį ir šia informaciją naudoti skaičiuojant dienos kalorijų limitą 
+
+
+
+
+
+
+
 
 
 
