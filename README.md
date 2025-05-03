@@ -46,15 +46,49 @@ b. OOP principai
    Vartotojas naudoja metodus kaip add_iteml() be vidinio mechanizmo žinojimo.
    ![image](https://github.com/user-attachments/assets/bdd6653d-1885-4648-97ab-fb0f7eea0ba7)
 2. Encapsulation:
-   Kiekviena klasė saugo vidinius duomenis per metodus
+   Kiekviena klasė saugo vidinius duomenis nuo kitų klasių.
    ![image](https://github.com/user-attachments/assets/241084de-0240-4de8-bb5a-42bc8307924f)
 3. Inheritance:
-   Visos manager klasės paveldi base_manager klasę.
+   Visos manager(vaikų) klasės paveldi base_manager(tėvų) klasę.
    ![image](https://github.com/user-attachments/assets/2e59a6a4-4714-46b1-9570-53526e6073a2)
    ![image](https://github.com/user-attachments/assets/ac3bb626-a23c-41f4-86f0-33dfe990dae4)
 4. Polymorphism:
    Patiekalų siūlymas ir registravimas veikia nepriklausomai nuo ingredientų.
    ![image](https://github.com/user-attachments/assets/5390a77a-91c1-4836-ad92-9e44b17a465e)
 
+c. Naudotas dizaino modelis
 
-   
+Klasė MealSuggester naudoja Singleton dizaino modelį, todėl ji atlieka tik vieną funkciją - siūlo patiekalus pagal turimus produktus. 
+![image](https://github.com/user-attachments/assets/d013efef-7856-4dbb-bada-dfcb15edc9ed)
+
+Taip pat Template Method dizaino modelis yra naudojamas kartu su abstraction principu. Jis padeda nustatyti bendrą veiksmų eigą bazinėje (abstrakčioje) klasėje, tačiau leidžia konkrečioms paveldėtoms klasėms įgyvendinti detales. 
+![image](https://github.com/user-attachments/assets/9a01c917-fcea-418c-9a3d-1575fcb27687)
+
+d. Kompozicija ir agregacija
+
+Kompozicija:
+jei ištrinsim NutritionApp, visi komponentai šioje klasėje irgi išnyks
+![image](https://github.com/user-attachments/assets/a3152a54-f486-4447-a9a6-feb2da3913fc)
+
+Agregacija:
+
+![image](https://github.com/user-attachments/assets/0a566f7a-9bca-4af0-bc52-0be7fe7ba90f)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
