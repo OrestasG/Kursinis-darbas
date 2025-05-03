@@ -37,5 +37,24 @@ a. Funkciniai reikalavimai
    ![image](https://github.com/user-attachments/assets/f23f928f-83cc-4798-a847-33b4b4632836)
    Registruojami patiekalai ir atimamos kalorijos iš dienos limito.
 5. Patiekalų pasiūlymai pagal turimus ingredientus:
-   ![image](https://github.com/user-attachments/assets/c446e3e6-9803-42f6-9d06-1428a777e308)
+   ![image](https://github.com/user-attachments/assets/a84e2eef-a210-47e9-a5bd-66ec1ed05ea8)
    Filtruoja patiekalus, atitinkančius turimus ingredientus.
+
+b. OOP principai
+
+1. Abstraction:
+   Vartotojas naudoja metodus kaip add_iteml() be vidinio mechanizmo žinojimo.
+   ![image](https://github.com/user-attachments/assets/bdd6653d-1885-4648-97ab-fb0f7eea0ba7)
+2. Encapsulation:
+   Kiekviena klasė saugo vidinius duomenis per metodus
+   ![image](https://github.com/user-attachments/assets/241084de-0240-4de8-bb5a-42bc8307924f)
+3. Inheritance:
+   Visos manager klasės paveldi base_manager klasę.
+   ![image](https://github.com/user-attachments/assets/2e59a6a4-4714-46b1-9570-53526e6073a2)
+   ![image](https://github.com/user-attachments/assets/ac3bb626-a23c-41f4-86f0-33dfe990dae4)
+4. Polymorphism:
+   Patiekalų siūlymas ir registravimas veikia nepriklausomai nuo ingredientų.
+   ![image](https://github.com/user-attachments/assets/5390a77a-91c1-4836-ad92-9e44b17a465e)
+
+
+   
