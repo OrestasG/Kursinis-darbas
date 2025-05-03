@@ -2,17 +2,17 @@
 
 ## Įvadas
 
-a. Apie mano programą
+### a. Apie mano programą
 
 Mitybos sekimo program - tai python kalba parasyta progrmam, skirta padėti vartotojams nusistatyti ir pasiekti mitybos tikslus. Ši programa leidžia apskaičiuoti saugų dienos kalorijų kiekį pagal dabartinį svorį, norima pasiekti svorį ir terminą. Vartotojai gali pridėti savo ingredientų ir patiekalų, sekti suvartotas kalorijas bei gauti pasiūlymus pagal turimus ingredientus.
 
-b. Kaip paleisti programą?
+### b. Kaip paleisti programą?
 
 1. Įsitikinti kad yra instaliuotas Python 3.
 2. Atsisiųsti visus .py failus is GitHub
 3. Paleisti pagrindinę programą: app.py
 
-c. Kaip naudotis programa?
+### c. Kaip naudotis programa?
 
 - Įveskite informaciją: lytį, amžių, ūgį, esamą svorį, tikslinį svorį ir laikotarpį.
 - Pridėkite ingredientų su kalorijų verte.
@@ -22,7 +22,7 @@ c. Kaip naudotis programa?
 
 ## Analizė
 
-a. Funkciniai reikalavimai
+### a. Funkciniai reikalavimai
 
 1. Dienos kalorijų skaičiavimas:
    ![image](https://github.com/user-attachments/assets/1b4c11e8-8d2e-4ca3-be56-04c599a98d39)
@@ -40,7 +40,7 @@ a. Funkciniai reikalavimai
    ![image](https://github.com/user-attachments/assets/a84e2eef-a210-47e9-a5bd-66ec1ed05ea8)
    Filtruoja patiekalus, atitinkančius turimus ingredientus.
 
-b. OOP principai
+### b. OOP principai
 
 1. Abstraction:
    Vartotojas naudoja metodus kaip add_iteml() be vidinio mechanizmo žinojimo.
@@ -56,7 +56,7 @@ b. OOP principai
    Patiekalų siūlymas ir registravimas veikia nepriklausomai nuo ingredientų.
    ![image](https://github.com/user-attachments/assets/5390a77a-91c1-4836-ad92-9e44b17a465e)
 
-c. Naudotas dizaino modelis
+### c. Naudotas dizaino modelis
 
 Klasė MealSuggester naudoja Singleton dizaino modelį, todėl ji atlieka tik vieną funkciją - siūlo patiekalus pagal turimus produktus. 
 ![image](https://github.com/user-attachments/assets/d013efef-7856-4dbb-bada-dfcb15edc9ed)
@@ -64,20 +64,27 @@ Klasė MealSuggester naudoja Singleton dizaino modelį, todėl ji atlieka tik vi
 Taip pat Template Method dizaino modelis yra naudojamas kartu su abstraction principu. Jis padeda nustatyti bendrą veiksmų eigą bazinėje (abstrakčioje) klasėje, tačiau leidžia konkrečioms paveldėtoms klasėms įgyvendinti detales. 
 ![image](https://github.com/user-attachments/assets/9a01c917-fcea-418c-9a3d-1575fcb27687)
 
-d. Kompozicija ir agregacija
+### d. Kompozicija ir agregacija
 
 Kompozicija:
 jei ištrinsim NutritionApp, visi komponentai šioje klasėje irgi išnyks
 ![image](https://github.com/user-attachments/assets/a3152a54-f486-4447-a9a6-feb2da3913fc)
 
 Agregacija:
-
+jei sunaikinsim MealManager, IngredientManager funkcija niekur nedings ir galima bus naudoti kitoje vietoje.
 ![image](https://github.com/user-attachments/assets/0a566f7a-9bca-4af0-bc52-0be7fe7ba90f)
 
 
+## Rezultatai ir apibendrinimas
 
+### a. Rezultatai 
 
+- Pasiekti visi išsikelti tikslai.
+- Tinkamai pritaikyti OOP principai ir dizaino modeliai.
+- Patikrinami visi klaidingai įvedami duomenys.
+- Sėkmingai atlikti visi testai.
 
+### b. Apibendrinimas
 
 
 
