@@ -22,6 +22,6 @@ class MealSuggester:
             if all(ing in available for ing, _ in ing_list):
                 print(f"- {meal}")
                 found = True
-        # If no meals match the available ingredients, inform the user.
+        
         if not found:
             print("No matches found.\n")
