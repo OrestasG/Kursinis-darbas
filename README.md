@@ -10,9 +10,9 @@ b. Kaip paleisti programą?
 
 1. Įsitikinti kad yra instaliuotas Python 3.
 2. Atsisiųsti visus .py failus is GitHub
-3. Paaleisti pagrindinę programą: app.py
+3. Paleisti pagrindinę programą: app.py
 
- c. Kaip naudotis programa?
+c. Kaip naudotis programa?
 
 - Įveskite informaciją: lytį, amžių, ūgį, esamą svorį, tikslinį svorį ir laikotarpį.
 - Pridėkite ingredientų su kalorijų verte.
@@ -20,4 +20,9 @@ b. Kaip paleisti programą?
 - Registruokite suvalgytus patiekalus ir stebėkite likusias dienos kalorijas.
 - Gaukite pasiūlymus pagal namuose turimus ingredientus.
 
-  ## Analizė
+## Analizė
+
+a. Funkciniai reikalavimai
+
+1. Dienos kalorijų skaičiavimas:
+   ![image](https://github.com/user-attachments/assets/1b4c11e8-8d2e-4ca3-be56-04c599a98d39)
